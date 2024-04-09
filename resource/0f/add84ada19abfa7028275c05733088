@@ -1,0 +1,66 @@
+local vuxConfig = require "config"
+NotifyOnNewObject("/Script/Pal.PalOptionSubsystem", function(vuxPalOptionSubsystem)
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.DayTimeSpeedRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.DayTimeSpeedRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.NightTimeSpeedRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.NightTimeSpeedRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.ExpRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.ExpRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalCaptureRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalCaptureRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalSpawnNumRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalSpawnNumRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalDamageRateAttack.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalDamageRateAttack.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalDamageRateDefense.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalDamageRateDefense.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerDamageRateAttack.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerDamageRateAttack.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerDamageRateDefense.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerDamageRateDefense.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerStomachDecreaceRate.Min = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerStomachDecreaceRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerStaminaDecreaceRate.Min = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerStaminaDecreaceRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerAutoHPRegeneRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerAutoHPRegeneRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerAutoHpRegeneRateInSleep.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PlayerAutoHpRegeneRateInSleep.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalStomachDecreaceRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalStomachDecreaceRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalStaminaDecreaceRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalStaminaDecreaceRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalAutoHPRegeneRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalAutoHPRegeneRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalAutoHpRegeneRateInSleep.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalAutoHpRegeneRateInSleep.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.BuildObjectDamageRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.BuildObjectDamageRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.BuildObjectDeteriorationDamageRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.BuildObjectDeteriorationDamageRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.CollectionDropRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.CollectionDropRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.CollectionObjectHpRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.CollectionObjectHpRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.CollectionObjectRespawnSpeedRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.CollectionObjectRespawnSpeedRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.EnemyDropItemRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.EnemyDropItemRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.DropItemMaxNum.Max = 10000
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.DropItemMaxNum.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.DropItemMaxNum_UNKO.Max = 10000
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.DropItemMaxNum_UNKO.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.WorkSpeedRate.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.WorkSpeedRate.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.AutoResetGuildTimeNoOnlinePlayers.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.AutoResetGuildTimeNoOnlinePlayers.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.GuildPlayerMaxNum.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.GuildPlayerMaxNum.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalEggDefaultHatchingTime.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.PalEggDefaultHatchingTime.Min = vuxConfig.num2
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.BaseCampWorkerMaxNum.Max = vuxConfig.num1
+    vuxPalOptionSubsystem.OptionWorldStaticSettings.BaseCampWorkerMaxNum.Min = vuxConfig.num2
+    print("World setting tweaks applied")
+    print("World setting max set to " .. vuxConfig.num1)
+    print("World setting min set to " .. vuxConfig.num2)
+end)

@@ -1,0 +1,21 @@
+{
+  "paldarSettings": {
+	"minimap_render_res": 512,
+    "rotation_lock": false,
+    "show_pal_positions": true,
+	"show_pal_level_on_icon": true,
+    "show_fast_travel_points": true,
+    "show_chests": true,
+    "show_players": true,
+    "pal_radar_rescan_rate_in_secs": 5,
+	"player_rescan_frequency": 12,
+    "chest_rescan_frequency": 14,
+    "delay_remove_dead_captured_pals_in_secs": 2
+  },
+  "keybinds": {
+    "megazoom_mode": "Z",
+    "move_minimap_location": "L",
+    "hide_show_minimap": "H",
+	"edit_minimap_pos_mode": "K"
+  }
+}

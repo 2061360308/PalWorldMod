@@ -1,0 +1,26 @@
+--- Author : MoxxyHaven ---
+--- Game v0.1.4.1 ---
+local UEHelpers = require("UEHelpers")
+local valueNum = 0
+
+RegisterHook("/Script/Engine.PlayerController:ClientRestart", function()
+	HandleClientRestart()
+end)
+
+function HandleClientRestart()
+	local playerController = UEHelpers:GetPlayerController()
+	local playerState = playerController:GetPalPlayerState()
+	local player = playerState:Getpawn()
+	local palUtility = StaticFindObject("/Script/Pal.Default__PalUtility")
+	local gameSetting = palUtility:GetGameSetting(player)
+	if gameSetting ~= nil then
+		HatchTimeValue(gameSetting)
+		print("[FasterHatch] Loaded")
+	else
+		print("[FasterHatch] Not work")
+	end
+end
+
+function HatchTimeValue(hatchTime)
+	hatchTime.LongPressInterval_GetHatchedPal = valueNum
+end

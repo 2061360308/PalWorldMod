@@ -1,0 +1,30 @@
+local utility = StaticFindObject("/Script/Pal.Default__PalUtility")
+
+local cureDelayAfterAction = 5000
+
+if not utility:IsValid() then
+	print("[Sleep It Off] Could not find utility! Sleep It Off failed to load!")
+	return
+end
+
+function curePal(characterActor)
+	local palParam = utility:GetIndividualCharacterParameterByActor(characterActor)
+	
+	local catSaveParam = palParam["SaveParameter"]
+	
+	if (catSaveParam["WorkerSick"] ~= 0) then
+		print(string.format("[Sleep It Off] Curing %s\n", characterActor:GetFullName()))
+		ExecuteWithDelay(cureDelayAfterAction, function()
+			catSaveParam["WorkerSick"] = 0
+		end)
+	end
+
+end
+
+NotifyOnNewObject("/Game/Pal/Blueprint/Controller/AIAction/BaseCamp/BP_AIActionBaseCamp_InSpa.BP_AIActionBaseCamp_InSpa_C", function(ConstructedObject)
+	curePal(ConstructedObject:GetOuter():GetOuter().Character)
+end)
+
+NotifyOnNewObject("/Game/Pal/Blueprint/Controller/AIAction/BaseCamp/BP_AIActionBaseCamp_Sleep.BP_AIActionBaseCamp_Sleep_C", function(ConstructedObject)
+	curePal(ConstructedObject:GetOuter():GetOuter().Character)
+end)
